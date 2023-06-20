@@ -7,13 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    
     <!-- Le styles -->
     <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
     <link href="css/style.css" rel="stylesheet">
+    <script src="./js/app.js"></script>
+    <style>
+      img:hover {
+  -webkit-transform:scale(1.52); /* or some other value */
+  transform:scale(1.55);
+}
+    </style>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -26,24 +33,28 @@
     <div class="container">
 
       <div class="masthead">
-        <h3 class="muted">Dynamic Safety</h3>
+        <div class="logo-holder logo-6">
+        
+          <h3>Dynamic <span>Safety</span></h3>
+       
+      </div>
         <div class="navbar">
           <div class="navbar-inner">
             <div class="container">
               <ul class="nav">
                 <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
                 <li class="dropdown">
 				  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
 				    Products
 				    <b class="caret"></b>
 				  </a>
 				  <ul class="dropdown-menu">
+            <li><a href="driver-list.html" class="active">Driver Gloves</a></li>
 				    <li><a href="welding-list.html">welding gloves</a></li>
-				    <li><a href="driver-list.html" class="active">Driver Gloves</a></li>
-				    <li><a href="canadian-list.html">Canadian gloves</a></li>
+				    <li><a href="canadian-list.html" >Canadian gloves</a></li>
 				  </ul>
 				</li>
+        <li><a href="aboutus.html">About Us</a></li>
 				  </a>
 				    <li><a href="contactus.html">Contact Us</a></li>
 				</li>
@@ -59,9 +70,9 @@
         <ul class="thumbnails">
           <li class="span3">
             <div class="thumbnail">
-              <img alt="230x200" src="././img/DSC0114.jpg">
+              <img alt="230x200" src="././img/DSC0114.jpg" >
               <div class="caption">
-                <h3>Art No. DS/D1</h3>
+                <h4>Art No. DS/D1</h4>
                 <p> Beige Cow Grain Leather Driver Gloves, straight thumb. Size S – XL.</p>
 
               </div>
@@ -71,7 +82,7 @@
             <div class="thumbnail">
               <img alt="230x200" src="././img/DSC9892.jpg">
               <div class="caption">
-                <h3>Art No. DS/D2</h3>
+                <h4>Art No. DS/D2</h4>
                 <p>Beige Cow Grain Leather Driver Gloves, keystone thumb. Size S – XL.</p>
 
               </div>
@@ -81,7 +92,7 @@
             <div class="thumbnail">
               <img alt="230x200" src="./img/DSC9893.jpg">
               <div class="caption">
-                <h3>Art No. DS/D3</h3>
+                <h4>Art No. DS/D3</h4>
                 <p>Beige Cow Grain Leather Driver Gloves, keystone thumb with reflective on finger tips. Size S – XL.</p>
       
               </div>
@@ -91,7 +102,7 @@
             <div class="thumbnail">
               <img alt="230x200" src="./img/DSC9913.jpg">
               <div class="caption">
-                <h3>Art No. DS/D4</h3>
+                <h4>Art No. DS/D4</h4>
                 <p>Yellow Cow Grain Leather Driver Gloves, keystone thumb. Size S – XL</p>
                
               </div>
@@ -105,14 +116,14 @@
             <div class="thumbnail">
               <img alt="230x200" src="./img/DSC9940.jpg">
               <div class="caption">
-                <h3>Art No. DS/D5</h3>
+                <h4>Art No. DS/D5</h4>
                 <p>White Cow Grain Leather Driver Gloves, keystone thumb. Size S – XL. </div>
           </li>
           <li class="span3">
             <div class="thumbnail">
               <img alt="230x200" src="./img/DSC9969.jpg">
               <div class="caption">
-                <h3>Art No. DS/D6.</h3>
+                <h4>Art No. DS/D6.</h4>
                 <p> White Goat Grain Leather Lined Driver Gloves, Size S – XL.</p>
 
               </div>
@@ -122,7 +133,7 @@
             <div class="thumbnail">
               <img alt="230x200" src="./img/DSC9973.jpg">
               <div class="caption">
-                <h3>Art No. DS/D7.</h3>
+                <h4>Art No. DS/D7.</h4>
                 <p>White Goat Grain Leather Driver Gloves, re-in forced palm with Velcro. Size 10.</p>
 
               </div>
@@ -132,7 +143,7 @@
             <div class="thumbnail">
               <img alt="230x200" src="./img/DSC9989.jpg">
               <div class="caption">
-                <h3>Art No. DS/D8.</h3>
+                <h4>Art No. DS/D8.</h4>
                 <p>White Goat Grain Leather Driver Gloves. Size 10</p>
 
               </div>
@@ -144,9 +155,9 @@
         <ul class="thumbnails">
           <li class="span3">
             <div class="thumbnail">
-              <img alt="230x200" src="./img/DSC9996.jpg">
+              <img alt="230x200" src="./img/DSC9996.jpg" id="MImg">
               <div class="caption">
-                <h3>Art No. DS/D9.</h3>
+                <h4>Art No. DS/D9.</h4>
                 <p>Split Leather Driver Gloves, keystone thumb. Size S – XL.</p>
 
               </div>
@@ -156,21 +167,15 @@
             <div class="thumbnail">
               <img alt="230x200" src="./img/DSC9997.jpg">
               <div class="caption">
-                <h3>Art No. DS/D10</h3>
+                <h4>Art No. DS/D10</h4>
                 <p>White Cow Grain Leather Driver Gloves with Split Leather re-in forced palm. Size 10</p>
 
               </div>
             </div>
           </li>
 
-      <br>
-      <hr>
 
-<br>
-      <div class="footer">
-        <p>&copy; Dynamicsafety </p>
-      </div>
-    </div> <!-- /container -->
+
 
   </body>
 </html>
